@@ -26,4 +26,19 @@ Measured outcomes concern finite-rate oscillator sweeps and a fixed programmed v
 - [Verification scope](docs/VERIFICATION.md)
 - [Paper submission record](paper/README.md)
 
-The current publication derivative has undergone static inspection only. Archived outputs retain their original bytes. The edited surrogate script has not been executed. A license has not been selected.
+The current publication derivative has undergone static inspection only. Archived outputs retain their original bytes. The edited surrogate script has not been executed. License terms are provided below.
+
+## License and attribution
+
+Copyright (c) 2026 Hashirigaki.
+
+Different licenses apply to different parts of this repository:
+
+- **MIT License**: Python source code (`*.py`) and dependency specifications (`requirements.txt`). See [LICENSE](LICENSE).
+- **CC BY 4.0**: Research documentation (`*.md`), figures (`*.png`), datasets (`*.csv`, `*.jsonl`), and metadata (`*.json`). See [LICENSE-CONTENT.md](LICENSE-CONTENT.md).
+
+The MIT License is not intended to override the CC BY 4.0 terms for research content.
+
+Suggested citation: Hashirigaki (2026), *From Cooperation to Collective Misalignment*, Hashirigaki Lab, https://github.com/Hashirigaki/collective-misalignment-dynamics.
+
+Licenses do not imply that the exploratory findings have been independently validated.
