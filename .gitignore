@@ -1,0 +1,21 @@
+# Publication safeguards; review the explicit 29-file allowlist separately.
+*.pdf
+*.zip
+*.docx
+*.tex
+*.bib
+report_data.json
+REPORT.md
+STAGING_STATUS.md
+verification.json
+PUBLICATION_SECURITY.md
+RELEASE_CHECKLIST_ja.md
+CV_SNIPPET.md
+.env
+.env.*
+*.pem
+*.key
+__pycache__/
+*.py[cod]
+.venv/
+run_repeat/

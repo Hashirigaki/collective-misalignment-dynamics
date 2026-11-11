@@ -1,0 +1,284 @@
+{
+  "label": "Toy simulation",
+  "version": "0.3",
+  "platform": "Windows-11-10.0.26300-SP0",
+  "python": "3.13.17",
+  "numpy": "2.5.4",
+  "matplotlib": "3.11.2",
+  "seeds": [
+    7,
+    11,
+    19
+  ],
+  "plateaus": [
+    18,
+    36,
+    72,
+    144
+  ],
+  "dt": 0.025,
+  "kmax": 5.0,
+  "nk": 13,
+  "model_parameters": {
+    "n_groups": 3,
+    "n_per_group": 8,
+    "inertia": 1.3,
+    "damping": 0.7,
+    "omega_std": 0.75,
+    "out_ratio": 0.16,
+    "alpha_in": 0.1,
+    "alpha_out": 0.25,
+    "tau_h": 24.0,
+    "memory_gain": 0.85,
+    "threshold": 0.8
+  },
+  "integration": "Forward Euler for H and v, then phase update with updated v",
+  "conditions": [
+    {
+      "memory_feedback": false,
+      "effective_memory_gain": 0.0
+    },
+    {
+      "memory_feedback": true,
+      "effective_memory_gain": 0.85
+    }
+  ],
+  "design": "Each plateau/seed/feedback run restarts with seed-matched phases, frequencies and velocities; H starts at zero. Within a run, state carries through all 25 plateaus.",
+  "trace_sampling": "Every floor(plateau / dt / 50) steps, starting at the first step. t, R_global and H_mean are post-step; R_mean is pre-step (time t - dt).",
+  "endpoint_area": "Trapezoid of absolute up/down endpoint R_mean gaps over common K = 0 to 55/12; omit Kmax, which is visited once.",
+  "tail_area": "Same area using the mean of sampled pre-step R_mean in the last 20% of each plateau; samples are not independent replicates.",
+  "nominal_step_rate": "(kmax / (nk - 1)) / plateau; staircase schedule with discrete jumps",
+  "limits": "Finite staircase sweeps at one dt and group size. Genuine hysteresis, Chimera states, chaos, and collective LLM goal drift are untested. Phase coherence measures oscillator phase synchrony.",
+  "runs": [
+    {
+      "label": "Toy simulation",
+      "plateau": 18,
+      "nominal_step_rate": 0.02314814814814815,
+      "seed": 7,
+      "memory_feedback": false,
+      "endpoint_area": 0.10022288755298905,
+      "tail_area": 0.1445991852711913
+    },
+    {
+      "label": "Toy simulation",
+      "plateau": 18,
+      "nominal_step_rate": 0.02314814814814815,
+      "seed": 7,
+      "memory_feedback": true,
+      "endpoint_area": 0.16684520942337036,
+      "tail_area": 0.16544493031052626
+    },
+    {
+      "label": "Toy simulation",
+      "plateau": 18,
+      "nominal_step_rate": 0.02314814814814815,
+      "seed": 11,
+      "memory_feedback": false,
+      "endpoint_area": 0.2796319385764797,
+      "tail_area": 0.211365628494233
+    },
+    {
+      "label": "Toy simulation",
+      "plateau": 18,
+      "nominal_step_rate": 0.02314814814814815,
+      "seed": 11,
+      "memory_feedback": true,
+      "endpoint_area": 0.16036525986918404,
+      "tail_area": 0.26802929224290295
+    },
+    {
+      "label": "Toy simulation",
+      "plateau": 18,
+      "nominal_step_rate": 0.02314814814814815,
+      "seed": 19,
+      "memory_feedback": false,
+      "endpoint_area": 0.22436852849032318,
+      "tail_area": 0.24678869688792263
+    },
+    {
+      "label": "Toy simulation",
+      "plateau": 18,
+      "nominal_step_rate": 0.02314814814814815,
+      "seed": 19,
+      "memory_feedback": true,
+      "endpoint_area": 0.27266648330073573,
+      "tail_area": 0.2498250811466239
+    },
+    {
+      "label": "Toy simulation",
+      "plateau": 36,
+      "nominal_step_rate": 0.011574074074074075,
+      "seed": 7,
+      "memory_feedback": false,
+      "endpoint_area": 0.1487821213291941,
+      "tail_area": 0.08869092854076112
+    },
+    {
+      "label": "Toy simulation",
+      "plateau": 36,
+      "nominal_step_rate": 0.011574074074074075,
+      "seed": 7,
+      "memory_feedback": true,
+      "endpoint_area": 0.07260736606568441,
+      "tail_area": 0.09870518908301268
+    },
+    {
+      "label": "Toy simulation",
+      "plateau": 36,
+      "nominal_step_rate": 0.011574074074074075,
+      "seed": 11,
+      "memory_feedback": false,
+      "endpoint_area": 0.19473650846379476,
+      "tail_area": 0.11509873480416288
+    },
+    {
+      "label": "Toy simulation",
+      "plateau": 36,
+      "nominal_step_rate": 0.011574074074074075,
+      "seed": 11,
+      "memory_feedback": true,
+      "endpoint_area": 0.14301637767663036,
+      "tail_area": 0.12476411678717947
+    },
+    {
+      "label": "Toy simulation",
+      "plateau": 36,
+      "nominal_step_rate": 0.011574074074074075,
+      "seed": 19,
+      "memory_feedback": false,
+      "endpoint_area": 0.1836563715326142,
+      "tail_area": 0.10928316906745697
+    },
+    {
+      "label": "Toy simulation",
+      "plateau": 36,
+      "nominal_step_rate": 0.011574074074074075,
+      "seed": 19,
+      "memory_feedback": true,
+      "endpoint_area": 0.15663942048859242,
+      "tail_area": 0.15610813765042605
+    },
+    {
+      "label": "Toy simulation",
+      "plateau": 72,
+      "nominal_step_rate": 0.005787037037037038,
+      "seed": 7,
+      "memory_feedback": false,
+      "endpoint_area": 0.08385702000392084,
+      "tail_area": 0.09811734463904884
+    },
+    {
+      "label": "Toy simulation",
+      "plateau": 72,
+      "nominal_step_rate": 0.005787037037037038,
+      "seed": 7,
+      "memory_feedback": true,
+      "endpoint_area": 0.052408559864266215,
+      "tail_area": 0.03712878489219413
+    },
+    {
+      "label": "Toy simulation",
+      "plateau": 72,
+      "nominal_step_rate": 0.005787037037037038,
+      "seed": 11,
+      "memory_feedback": false,
+      "endpoint_area": 0.1189089662838849,
+      "tail_area": 0.07255095982618114
+    },
+    {
+      "label": "Toy simulation",
+      "plateau": 72,
+      "nominal_step_rate": 0.005787037037037038,
+      "seed": 11,
+      "memory_feedback": true,
+      "endpoint_area": 0.1344147515321816,
+      "tail_area": 0.16046969342357095
+    },
+    {
+      "label": "Toy simulation",
+      "plateau": 72,
+      "nominal_step_rate": 0.005787037037037038,
+      "seed": 19,
+      "memory_feedback": false,
+      "endpoint_area": 0.09451048792461304,
+      "tail_area": 0.09229665130316175
+    },
+    {
+      "label": "Toy simulation",
+      "plateau": 72,
+      "nominal_step_rate": 0.005787037037037038,
+      "seed": 19,
+      "memory_feedback": true,
+      "endpoint_area": 0.2159864334663282,
+      "tail_area": 0.08974939769858818
+    },
+    {
+      "label": "Toy simulation",
+      "plateau": 144,
+      "nominal_step_rate": 0.002893518518518519,
+      "seed": 7,
+      "memory_feedback": false,
+      "endpoint_area": 0.07547832683180022,
+      "tail_area": 0.04268756905411248
+    },
+    {
+      "label": "Toy simulation",
+      "plateau": 144,
+      "nominal_step_rate": 0.002893518518518519,
+      "seed": 7,
+      "memory_feedback": true,
+      "endpoint_area": 0.06377117904621064,
+      "tail_area": 0.029316471163607943
+    },
+    {
+      "label": "Toy simulation",
+      "plateau": 144,
+      "nominal_step_rate": 0.002893518518518519,
+      "seed": 11,
+      "memory_feedback": false,
+      "endpoint_area": 0.2456907600105569,
+      "tail_area": 0.11656097819473869
+    },
+    {
+      "label": "Toy simulation",
+      "plateau": 144,
+      "nominal_step_rate": 0.002893518518518519,
+      "seed": 11,
+      "memory_feedback": true,
+      "endpoint_area": 0.07338281537223215,
+      "tail_area": 0.09315399022384191
+    },
+    {
+      "label": "Toy simulation",
+      "plateau": 144,
+      "nominal_step_rate": 0.002893518518518519,
+      "seed": 19,
+      "memory_feedback": false,
+      "endpoint_area": 0.2482263043665037,
+      "tail_area": 0.09570101353222446
+    },
+    {
+      "label": "Toy simulation",
+      "plateau": 144,
+      "nominal_step_rate": 0.002893518518518519,
+      "seed": 19,
+      "memory_feedback": true,
+      "endpoint_area": 0.22772656215347348,
+      "tail_area": 0.11346520518443654
+    }
+  ],
+  "source_sha256": {
+    "run_plateau_study.py": "63ca134307c4312150a8f58f55dc68141ea7c658bcaf3b6d29646486d7574367",
+    "inertial_swarm_v02.py": "599c31b2668496497973651b5fed018135bccc65ecac0aaf876825d228cb429d"
+  },
+  "output_sha256": {
+    "figures/area_vs_plateau.png": "272eacceda0224fdb47c9c12bf25eedf75e579c94dc8ff2999f2ba96449002da",
+    "figures/sweep_plateau_144.png": "da1f3889a1b6ebc0f39f9fb5a0a492137d069e61c962d2aec19dde3f4aa99cf6",
+    "figures/sweep_plateau_18.png": "85383cd024af03162521252a1cad2322a1d3cf99f852e848e1374c93f9f3a718",
+    "figures/sweep_plateau_36.png": "84108ea889d505a0fb7ed67f17b9dec251aa81eb7117f32d303521b55eb81351",
+    "figures/sweep_plateau_72.png": "184c860eef94ec8d04f0f8fb9a678e29c3fbfa64a3d86d52e54678c84098b3a2",
+    "results/diagnostics.csv": "11fbeb5fb547cfdaf5139ea078f32457bae917f67257ade60e89c1b220662f90",
+    "results/sweep.csv": "f6e9b11976cb35520ad356c97cf2e48a499ab10a8898966e47c3af042b6c178b",
+    "results/trace.csv": "60a85d30904ad3c4b516f3ce240263c3f304079514c4c41e56f77bffe2099413"
+  }
+}

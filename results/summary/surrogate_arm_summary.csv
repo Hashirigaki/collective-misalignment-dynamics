@@ -1,0 +1,5 @@
+arm,rule,consensus_mean,consensus_trial_sd,correctness_mean,correctness_trial_sd,wrong_consensus_mean_rounded,wrong_consensus_trial_sd,exact_wrong_consensus_pct_as_reported,recovery_mean_rounds,recovery_trial_sd,persistence_mean_rounds,persistence_trial_sd,trial_count,provenance
+A,private only,0.999,0.014,0.982,0.034,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1000,reported_aggregate
+B,current sharing,0.995,0.042,0.987,0.04,0.001,0.021,0.14,0.059,0.624,0.003,0.055,1000,reported_aggregate
+C,historical citations,1.0,0.0,0.9,0.3,0.1,0.3,10.0,1.0,3.002,1.0,3.002,1000,reported_aggregate
+D,deduplicate all channels,0.988,0.073,0.982,0.082,0.007,0.067,0.69,0.166,1.086,0.041,0.487,1000,reported_aggregate

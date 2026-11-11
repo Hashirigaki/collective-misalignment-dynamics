@@ -1,0 +1,5 @@
+duration,endpoint_OFF_mean,endpoint_OFF_sample_sd,endpoint_ON_mean,endpoint_ON_sample_sd,late_OFF_mean,late_OFF_sample_sd,late_ON_mean,late_ON_sample_sd,seed_count,provenance
+18,0.201,0.092,0.2,0.063,0.201,0.052,0.228,0.055,3,reported_aggregate
+36,0.176,0.024,0.124,0.045,0.104,0.014,0.127,0.029,3,reported_aggregate
+72,0.099,0.018,0.134,0.082,0.088,0.013,0.096,0.062,3,reported_aggregate
+144,0.19,0.099,0.122,0.092,0.085,0.038,0.079,0.044,3,reported_aggregate
