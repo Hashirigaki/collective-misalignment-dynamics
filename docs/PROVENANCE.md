@@ -13,4 +13,4 @@ The surrogate publication script removes the manuscript-text function and its JS
 | Archived surrogate script | `038d80f40d207568627cd81244c17a977d379aa6eda7ead7bcf524d694724f14` |
 | Publication surrogate script | `ae1f9a699af66b0c0c2e2d6927b728b60a4180f95f064eb8cba01059d2de8286` |
 
-See [verification](VERIFICATION.md) for archived comparison records and [results](../results/README.md) for evidence boundaries. License and asset permission decisions remain with the author.
+See [verification](VERIFICATION.md) for archived comparison records and [results](../results/README.md) for evidence boundaries. License terms are specified in the root README and license files. Any third-party asset permissions remain subject to author review.

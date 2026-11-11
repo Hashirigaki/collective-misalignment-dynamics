@@ -1,4 +1,4 @@
-# Publication safeguards; review the explicit 29-file allowlist separately.
+# Publication safeguards; the original 29-file research payload was audited separately.
 *.pdf
 *.zip
 *.docx

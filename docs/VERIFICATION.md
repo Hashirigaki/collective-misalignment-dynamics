@@ -16,16 +16,15 @@ The archived v0.3 record describes 24 runs, 600 sweep rows and 30,900 trace rows
 
 ## Publication static verification
 
-All 40 audited source files matched Phase 2 sizes and SHA-256 values. The publication set contains exactly the authorized 29 paths. Eighteen files retain original bytes. The surrogate publication source has the original AST except for pdf_summary and its report-data write expression. The publication script has not been executed.
+All 40 audited source files matched Phase 2 sizes and SHA-256 values. The original scientific publication set contained exactly 29 authorized paths; repository-level licensing and metadata were added subsequently. Eighteen files retain original bytes. The surrogate publication source has the original AST except for pdf_summary and its report-data write expression. The publication script has not been executed.
 
 Original oscillator manifest source and output references resolve to byte-matching files. The derived surrogate manifest retains four archived data hashes and settings, records separate original/publication script hashes, and identifies the publication source as unexecuted. Markdown references resolve within this collection. Python syntax was parsed without importing or executing study modules.
 
 Text, path names and PNG ancillary metadata were statically scanned for local absolute paths, private internal references and common credential formats. Such scans cannot establish absence of every sensitive string. Removed manuscript-generation text was excluded. The submitted PDF matched its audited SHA-256 and text was extracted from all eight pages. After excluding the permitted title and subtitle, a normalized 20-consecutive-word comparison found no matches in publication Markdown, Python, JSON or text files. Shorter matches, paraphrases and text-extraction omissions remain subject to author review.
 
-## Open review items
+## Remaining verification limits and release checks
 
-- Author approval of the final files and separate Git operations.
-- License and permission decisions for all assets.
-- Effective Git Author, Committer and email before a future commit.
-- Future execution validation of the edited surrogate source, if authorized.
-- Author review of shorter or semantic manuscript overlap.
+- Software code is licensed under MIT; research content is licensed under CC BY 4.0. Any third-party material requires appropriate rights.
+- The edited surrogate publication source has not been runtime-tested.
+- Shorter or semantic manuscript overlaps have not been exhaustively reviewed.
+- Repository visibility requires a separate release decision. Scientific findings remain preliminary.

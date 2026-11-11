@@ -1,0 +1,13 @@
+# Preserve archived datasets and metadata byte-for-byte.
+*.csv -text
+*.json -text
+*.jsonl -text
+*.png binary
+
+# Keep source code and documentation consistently LF.
+*.py text eol=lf
+*.md text eol=lf
+*.txt text eol=lf
+LICENSE text eol=lf
+.gitignore text eol=lf
+.gitattributes text eol=lf
