@@ -6,8 +6,8 @@
 
 Submitted in November 2026 to Apart Research Swarm Alignment Hackathon 2026, Track 2 — The Science of Agent Networks, as reported by the author.
 
-## Research-program naming clarification (added after submission)
+## Research context
 
-The broader continuing research program is named **Heterogeneous Agent Collective Dynamics (HACD)**. **Chimera-Live** is the *internal working name* for the early implementation; the submitted paper uses that name in this sense. *From Cooperation to Collective Misalignment* is the actual submitted paper title, **not** a separate research program.
+This paper presents an initial study within **Heterogeneous Agent Collective Dynamics (HACD)**, a continuing research framework concerned with how collective states arise and evolve through interactions among heterogeneous agents. The submitted study focuses on history-dependent coordination and the persistence of incorrect collective judgments after corrective evidence.
 
-The original submitted manuscript does **not** contain the acronym HACD. This retrospective documentation clarifies the relationship without altering or replacing the submitted manuscript, experimental code, or archived results.
+**Chimera-Live** is the internal working name used for the preliminary implementation and retained in the source code and manuscript. The submitted paper title is *From Cooperation to Collective Misalignment*.
