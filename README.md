@@ -2,19 +2,35 @@
 
 Exploratory research by Hashirigaki, Independent Researcher, Hashirigaki Lab.
 
-## Research program and naming
+## Research Overview
 
-**Formal research program:** **Heterogeneous Agent Collective Dynamics (HACD)**  
-**Submitted hackathon paper:** *From Cooperation to Collective Misalignment*  
-**Internal working name for the early implementation:** **Chimera-Live v0.3**
+This research investigates how collective states emerge, persist, and change through interactions among agents, with particular attention to the effects of shared information, accumulated history, and network structure.
 
-These names refer to one continuing line of research, not separate research programs. **HACD** names the broader research framework. **Chimera-Live** was the internal name used for the preliminary implementation; the submitted paper explicitly calls it an internal project name. *From Cooperation to Collective Misalignment* is the unchanged title of the paper submitted to Apart Research's Swarm Alignment Hackathon 2026, Track 2.
+The broader research framework, **Heterogeneous Agent Collective Dynamics (HACD)**, examines the nonlinear collective dynamics of heterogeneous agents with differing objectives, memory states, and interaction histories. It considers how coupling, synchronization, state-space geometry, and external perturbations influence collective behavior and transitions between states.
 
-This clarification was added **after submission**. It does not rename the submitted paper or modify any archived code, measurements, or manuscript. The oscillator and programmed-surrogate results here are preliminary studies informing HACD; the full proposed research program has not been implemented or validated.
+Synchronization and collective agreement are treated as dynamical properties rather than evidence of correctness. Whether a collective state represents successful coordination or a failure depends on the objectives and context in which it is evaluated.
 
-This collection contains archived outputs and code for two separate numerical studies. The motivating question is whether repeated cooperation can preserve a shared error after reliable corrective evidence arrives. Extension to language-model agents remains a hypothesis.
+The preliminary study presented in this repository focuses on a specific question: whether repeated cooperation and evidence reuse can sustain incorrect collective judgments even after verified corrective information becomes available.
 
-## Archived measurements
+Two complementary experiments investigate this question: a three-group inertial-oscillator simulation and a separate programmed-agent experiment involving 1,000 matched trials. These experiments provide initial observations of finite-time collective dynamics and error persistence under specified rules. Further validation is required to establish hysteresis, multistability, chimera states, or corresponding phenomena in language-model agents.
+
+## Research Framework and Publication
+
+**Research framework:** Heterogeneous Agent Collective Dynamics (HACD)
+
+**Submitted paper:** *From Cooperation to Collective Misalignment*
+
+**Subtitle:** *History-Dependent Critical Transitions in Multi-Agent Networks: A Chimera-Inspired Dynamical Systems Approach*
+
+**Venue:** Apart Research — Swarm Alignment Hackathon 2026, Track 2: The Science of Agent Networks
+
+The submitted paper presents an initial investigation within the broader HACD research framework, focusing on history-dependent collective behavior, evidence reuse, correction response, and the conditions under which collective errors may persist.
+
+*Implementation note: Chimera-Live v0.3 is the internal working name used for the preliminary implementation. This name is retained in the original source code and submitted paper for traceability.*
+
+---
+
+## Archived Measurements
 
 The oscillator study used three seeds, feedback ON/OFF and plateau durations 18, 36, 72 and 144. Late-window discrepancy decreased between durations 18 and 144 in all six matched seed/feedback pairs. Aggregate means changed from 0.2009 to 0.0850 for feedback OFF and 0.2278 to 0.0786 for feedback ON. Intermediate durations and endpoint measures can reverse. Changing feedback also changes effective coupling.
 
