@@ -2,6 +2,16 @@
 
 Exploratory research by Hashirigaki, Independent Researcher, Hashirigaki Lab.
 
+## Research program and naming
+
+**Formal research program:** **Heterogeneous Agent Collective Dynamics (HACD)**  
+**Submitted hackathon paper:** *From Cooperation to Collective Misalignment*  
+**Internal working name for the early implementation:** **Chimera-Live v0.3**
+
+These names refer to one continuing line of research, not separate research programs. **HACD** names the broader research framework. **Chimera-Live** was the internal name used for the preliminary implementation; the submitted paper explicitly calls it an internal project name. *From Cooperation to Collective Misalignment* is the unchanged title of the paper submitted to Apart Research's Swarm Alignment Hackathon 2026, Track 2.
+
+This clarification was added **after submission**. It does not rename the submitted paper or modify any archived code, measurements, or manuscript. The oscillator and programmed-surrogate results here are preliminary studies informing HACD; the full proposed research program has not been implemented or validated.
+
 This collection contains archived outputs and code for two separate numerical studies. The motivating question is whether repeated cooperation can preserve a shared error after reliable corrective evidence arrives. Extension to language-model agents remains a hypothesis.
 
 ## Archived measurements
